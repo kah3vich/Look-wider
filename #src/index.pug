@@ -1,0 +1,31 @@
+@@include('components/_head.pug')
+
+    @@include('components/_header.pug')
+
+    section.headers  
+        .headers__block 
+        .headers__icons 
+            .headers__icons-item.wow.fadeIn(data-wow-delay="3s")
+            .headers__icons-item.wow.fadeIn(data-wow-delay="3s")
+            .headers__icons-item.wow.fadeIn(data-wow-delay="3s")
+            .headers__icons-item.wow.fadeIn(data-wow-delay="3s")
+        .headers__text
+            | BEAUTY
+            br
+            br
+            | IN
+            br
+            br
+            | EVER
+            br
+            br
+            | FRAME
+        .headers__btns 
+            button(class="headers__btns-play wow fadeIn" data-wow-delay="3s")
+                a(href="#") PLAY
+            button(class="headers__btns-scroll wow fadeIn" data-wow-delay="3s")
+                a(href="#") Scroll right
+
+    @@include('components/_footer.pug')
+
+@@include('components/_script.pug')
