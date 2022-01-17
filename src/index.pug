@@ -1,0 +1,76 @@
+@@include('components/_head.pug', {
+    "title": "Главная",
+})
+
+@@include('components/_header.pug')
+
+
+    section.slider
+        .slider__wrappers 
+            button.slider__wrappers-project.wow.fadeInUp.animated(data-wow-delay="3.9s") 
+                a(href="#") Начать проект
+            button.slider__wrappers-detailed.wow.fadeInUp.animated(data-wow-delay="3.9s")  
+                a(href="#") ПОДРОБНЕЕ
+            .slider__wrappers-text 
+                .slider__wrappers-text-item BEAUTY&nbsp; &nbsp; IN&nbsp; &nbsp;  EVER&nbsp; &nbsp;  FRAME
+            .slider__wrappers-preloader
+
+            .slider__wrappers-nav
+                .slider__wrappers-nav-logo.wow.fadeInUp.animated(data-wow-delay="3.4s")
+                    a(href="/") SMOTRI SHIRE
+                ul.slider__wrappers-nav-list
+                    li.slider__wrappers-nav-item.slider__wrappers-nav-item-active.wow.fadeInUp.animated(data-wow-delay="3.1s")
+                        a(href="#") ПОРТФОЛИО.
+                    li.slider__wrappers-nav-item.wow.fadeInUp.animated(data-wow-delay="3.7s") 
+                        a(href="#") КОМАНДА.
+                    li.slider__wrappers-nav-item.wow.fadeInUp.animated(data-wow-delay="3.9s") 
+                        a(href="#") showreel.
+                    li.slider__wrappers-nav-item.wow.fadeInUp.animated(data-wow-delay="4s")
+                        a(href="#") КУРСЫ.
+                    li.slider__wrappers-nav-item.wow.fadeInUp.animated(data-wow-delay="4.1s")
+                        a(href="#") КОНТАКТЫ
+                .slider__wrappers-nav-menu.wow.fadeInUp.animated(data-wow-delay="3.9s") 
+                    img(src="./svg/sprite.svg#menu")
+
+            .slider__wrappers-slider 
+                .swiper.indexSlider
+                    .swiper-wrapper
+                        .swiper-slide
+                            .slider__wrappers-slider-items
+                                .slider__wrappers-slider-background
+                                    img(src="./img/index/slider-1.png" alt="img")
+                                .slider__wrappers-slider-title.animate__delay-4s
+                                    p TINKOFF
+                                    | ДЕТЕКТИВ
+                        .swiper-slide
+                            .slider__wrappers-slider-items
+                                .slider__wrappers-slider-background 
+                                    img(src="./img/index/slider-3.png" alt="img")
+                                .slider__wrappers-slider-title(data-swiper-parallax="-300") 
+                                    p Посмотри
+                                    | наш SHOWREEL
+                        .swiper-slide
+                            .slider__wrappers-slider-items
+                                .slider__wrappers-slider-background
+                                    img(src="./img/index/slider-4.png" alt="img")
+                                .slider__wrappers-slider-title(data-swiper-parallax="-300") 
+                                    p Москва, Большая 
+                                    | Новодмитровская 36 стр. 1, 
+                                    br
+                                    | 1-й подъезд, 5 этаж  
+                                    br
+                                    | Дизайн-завод Флакон 
+                        .swiper-slide
+                            .slider__wrappers-slider-items
+                                .slider__wrappers-slider-background
+                                    img(src="./img/index/slider-5.png" alt="img")
+                                .slider__wrappers-slider-title(data-swiper-parallax="-300") 
+                                    p Наша
+                                    | Школа операторов
+                .swiper-controls 
+                    .swiper-pagination.wow.fadeInUp.animated(data-wow-delay="3.9s") 
+
+
+@@include('components/_footer.pug')
+
+@@include('components/_script.pug')
