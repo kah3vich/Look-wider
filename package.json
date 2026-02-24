@@ -1,13 +1,24 @@
 {
-  "name": "gulp-rs",
-  "version": "2.0.2.1",
-  "description": "Gulp-RS",
-  "main": "index.js",
-  "scripts": {
-    "gulp": "gulp"
+  "name": "look-wider",
+  "type": "module",
+  "author": {
+    "url": "https://github/kah3vich",
+    "name": "kah3vich",
+    "email": "kah3vich@proton.me"
   },
-  "author": "kah3vich_",
-  "license": "ISC",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "gulp",
+    "watch": "gulp watch",
+    "build": "gulp build",
+    "fonts": "gulp fonts",
+    "fontsStyle": "gulp fontsStyle",
+    "images": "gulp images",
+    "js": "gulp js",
+    "css": "gulp css",
+    "html": "gulp html",
+    "svg": "gulp svg"
+  },
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
